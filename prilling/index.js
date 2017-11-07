@@ -1,3 +1,16 @@
+/*
+ * @Author: taiaiqiang 
+ * @Date: 2017-11-07 17:22:13 
+ * @Last Modified by: taiaiqiang
+ * @Last Modified time: 2017-11-07 17:25:51
+ */
+/*
+原理简要说明:
+将图片渲染出来
+通过ctx.getImageData获取画布的像素数据 为一个类数组
+像素的rgba值存在数组的四个下标中,四个下标存一个像素点
+将原图的n个像素点渲染成一个像素点 即可完成颗粒化
+*/
 class Point {
     constructor(config) {
         this.config = config

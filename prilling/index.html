@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>琪琪我爱你</title>
+    <title>demo</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,8 +22,8 @@
     window.onload = () => {
         new Point({
             element: document.getElementById('map'),
-            src: './love.png',
-            //颗粒化度 0 ~ 1 值越小 颗粒化程度越高
+            src: './isux.png',
+            //颗粒化度  值越大 颗粒化程度越高 int
             granuleLimit: 1,
             //模糊度 越大越模糊
             dim: 6,
